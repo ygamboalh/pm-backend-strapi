@@ -1,0 +1,67 @@
+{
+  "kind": "collectionType",
+  "collectionName": "configurations",
+  "info": {
+    "singularName": "configuration",
+    "pluralName": "configurations",
+    "displayName": "Configuration"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "configCreatedAt": {
+      "type": "datetime",
+      "required": true
+    },
+    "usdPrice": {
+      "type": "integer",
+      "required": true
+    },
+    "totalGain": {
+      "type": "integer",
+      "required": true
+    },
+    "poundPrice": {
+      "type": "decimal",
+      "required": true
+    },
+    "totalEncargos": {
+      "type": "integer",
+      "required": true
+    },
+    "pendingEncargos": {
+      "type": "integer",
+      "required": true
+    },
+    "deliveredEncargos": {
+      "type": "integer",
+      "required": true
+    },
+    "totalShippingSpent": {
+      "type": "integer",
+      "required": true
+    },
+    "totalWeight": {
+      "type": "decimal",
+      "required": true
+    },
+    "totalBuySpent": {
+      "type": "integer",
+      "required": true
+    },
+    "gainPercentForBusiness": {
+      "type": "integer",
+      "required": true
+    },
+    "transferPercent": {
+      "type": "integer",
+      "required": true
+    },
+    "contactPhone": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

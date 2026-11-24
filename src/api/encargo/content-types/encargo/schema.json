@@ -1,0 +1,99 @@
+{
+  "kind": "collectionType",
+  "collectionName": "encargos",
+  "info": {
+    "singularName": "encargo",
+    "pluralName": "encargos",
+    "displayName": "Encargo"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "shoppingId": {
+      "type": "integer",
+      "required": true
+    },
+    "ownerName": {
+      "type": "string",
+      "required": true
+    },
+    "encargoCreatedAt": {
+      "type": "datetime",
+      "required": true
+    },
+    "ownerPhoneNumber": {
+      "type": "string",
+      "required": true
+    },
+    "shopName": {
+      "type": "string",
+      "required": true
+    },
+    "productLink": {
+      "type": "string",
+      "required": true
+    },
+    "deliveredStatus": {
+      "type": "string",
+      "required": true
+    },
+    "lastPaid": {
+      "type": "datetime",
+      "required": true
+    },
+    "payStatus": {
+      "type": "string",
+      "required": true
+    },
+    "productPrice": {
+      "type": "integer",
+      "required": true
+    },
+    "shopPrice": {
+      "type": "decimal",
+      "required": true
+    },
+    "productWeight": {
+      "type": "decimal",
+      "required": true
+    },
+    "productDescription": {
+      "type": "string",
+      "required": true
+    },
+    "poundPrice": {
+      "type": "decimal",
+      "required": true
+    },
+    "sentBy": {
+      "type": "string",
+      "required": true
+    },
+    "observation": {
+      "type": "string"
+    },
+    "productImage": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    },
+    "arrivedAt": {
+      "type": "datetime"
+    },
+    "deliveredAt": {
+      "type": "datetime"
+    },
+    "shopping": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::shopping.shopping",
+      "inversedBy": "encargos"
+    }
+  }
+}

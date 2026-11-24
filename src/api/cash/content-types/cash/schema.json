@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cashes",
+  "info": {
+    "singularName": "cash",
+    "pluralName": "cashes",
+    "displayName": "Cash"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "gasto": {
+      "type": "integer",
+      "default": 0,
+      "required": true
+    },
+    "ganancia": {
+      "type": "integer",
+      "default": 0,
+      "required": true
+    },
+    "resto": {
+      "type": "integer",
+      "default": 0,
+      "required": true
+    },
+    "motivoGasto": {
+      "type": "string",
+      "default": ""
+    },
+    "motivoGanancia": {
+      "type": "string",
+      "default": ""
+    },
+    "movementDate": {
+      "type": "datetime"
+    }
+  }
+}

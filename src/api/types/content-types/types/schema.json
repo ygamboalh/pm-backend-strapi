@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "typess",
+  "info": {
+    "singularName": "types",
+    "pluralName": "typess",
+    "displayName": "Type"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "typeId": {
+      "type": "integer",
+      "required": true,
+      "unique": true
+    },
+    "description": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

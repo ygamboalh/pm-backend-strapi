@@ -1,0 +1,109 @@
+{
+  "kind": "collectionType",
+  "collectionName": "products",
+  "info": {
+    "singularName": "product",
+    "pluralName": "products",
+    "displayName": "Product"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "productCreatedAt": {
+      "type": "datetime",
+      "required": true
+    },
+    "usdPrice": {
+      "type": "integer",
+      "required": true
+    },
+    "poundPrice": {
+      "type": "decimal",
+      "required": true
+    },
+    "shopPrice": {
+      "type": "decimal",
+      "required": true
+    },
+    "sellPrice": {
+      "type": "integer",
+      "required": true
+    },
+    "soldPrice": {
+      "type": "integer",
+      "required": true
+    },
+    "totalCost": {
+      "type": "integer",
+      "required": true
+    },
+    "weight": {
+      "type": "decimal",
+      "required": true
+    },
+    "soldDate": {
+      "type": "datetime",
+      "required": true
+    },
+    "category": {
+      "type": "string",
+      "required": true
+    },
+    "buyDate": {
+      "type": "datetime",
+      "required": true
+    },
+    "gainPlanned": {
+      "type": "integer",
+      "required": true
+    },
+    "gainReal": {
+      "type": "integer",
+      "required": true
+    },
+    "productImage": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "deliveredStatus": {
+      "type": "string",
+      "required": true
+    },
+    "productDescription": {
+      "type": "string",
+      "required": true
+    },
+    "shopName": {
+      "type": "string",
+      "required": true
+    },
+    "sentBy": {
+      "type": "string",
+      "required": true
+    },
+    "takenByVendor": {
+      "type": "string",
+      "required": true
+    },
+    "dateTakenByVendor": {
+      "type": "datetime",
+      "required": false
+    },
+    "gainPercent": {
+      "type": "integer",
+      "required": true,
+      "default": 30
+    },
+    "arrivedAt": {
+      "type": "datetime"
+    }
+  }
+}

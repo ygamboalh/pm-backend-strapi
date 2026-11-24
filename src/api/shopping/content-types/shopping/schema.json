@@ -1,0 +1,73 @@
+{
+  "kind": "collectionType",
+  "collectionName": "shoppings",
+  "info": {
+    "singularName": "shopping",
+    "pluralName": "shoppings",
+    "displayName": "Shopping"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "shoppingCreatedAt": {
+      "type": "datetime",
+      "required": true
+    },
+    "totalWeight": {
+      "type": "decimal",
+      "required": true
+    },
+    "shippingSpent": {
+      "type": "decimal"
+    },
+    "buySpent": {
+      "type": "integer",
+      "required": true
+    },
+    "usdPrice": {
+      "type": "integer",
+      "required": true
+    },
+    "poundPrice": {
+      "type": "decimal",
+      "required": true
+    },
+    "gain": {
+      "type": "integer",
+      "required": true
+    },
+    "totalSpent": {
+      "type": "integer",
+      "required": true
+    },
+    "isClosed": {
+      "type": "boolean",
+      "required": true,
+      "default": false
+    },
+    "givenMoney": {
+      "type": "integer",
+      "required": true
+    },
+    "totalEncargos": {
+      "type": "integer",
+      "required": true
+    },
+    "totalSpentUSD": {
+      "type": "decimal",
+      "required": true
+    },
+    "sentBy": {
+      "type": "string",
+      "required": true
+    },
+    "encargos": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::encargo.encargo",
+      "mappedBy": "shopping"
+    }
+  }
+}
